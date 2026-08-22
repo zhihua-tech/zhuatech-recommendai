@@ -1,4 +1,4 @@
-/* Copyright 2026 上海如静知华信息科技有限公司 */
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
 export const domain={
  code:'RECOMMENDAI',systemName:'知华可解释智能推荐平台',englishName:'EXPLAINABLE AI RECOMMENDATION',theme:{primary:'#625a7c',dark:'#352f47',accent:'#c88448'},workspace:'数字增长中心 / 推荐策略组',fieldWorkspace:'零售事业部 / 推荐运营组',period:'2026-08-19 · 实时策略',liveText:'用户分群与库存于 10:41 更新',fieldContextLabel:'当前场景',fieldContext:'商城首页 · 新客首购',fieldUser:'唐悦',fieldRole:'推荐运营专员',adminUser:'孟川',adminRole:'数字增长负责人',
  adminTitle:'推荐策略运营中心',adminBreadcrumb:'数字增长 / 智能推荐',adminSubtitle:'融合用户分群、商品匹配、库存与业务目标，生成带理由、可控且可复盘的推荐顺序。',exportAction:'导出策略报告',createAction:'新建推荐实验',chartTitle:'推荐点击转化趋势',chartSubtitle:'实际转化率 / 实验目标',chartLabels:['08:00','09:00','10:00','11:00','12:00','13:00','14:00','15:00','16:00'],loadTitle:'场景推荐负荷',loadSubtitle:'实验流量占策略容量',recordsTitle:'重点推荐实验',recordsSubtitle:'按业务影响、护栏命中和实验进度排序',issueTitle:'推荐策略事件',issueSubtitle:'需要运营、商品或合规共同确认',
