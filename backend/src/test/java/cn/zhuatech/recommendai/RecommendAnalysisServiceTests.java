@@ -6,13 +6,22 @@ import org.junit.jupiter.api.Test;
 import java.math.BigDecimal;
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 class RecommendAnalysisServiceTests {
     private final RecommendAnalysisService service = new RecommendAnalysisService();
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @Test void recommendsStrongAvailableCandidate() {
         var result = service.recommend(new RecommendAnalysisService.Request("新客-家居", "SKU-88", 92, 70, 85, new BigDecimal("0.35"), false, false));
         assertThat(result.decision()).isEqualTo("RECOMMEND");
         assertThat(result.placement()).isEqualTo("PRIMARY");
     }
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @Test void excludesRestrictedCategory() {
         var result = service.recommend(new RecommendAnalysisService.Request("普通客群", "SKU-X", 99, 90, 80, new BigDecimal("0.50"), false, true));
         assertThat(result.decision()).isEqualTo("EXCLUDE");

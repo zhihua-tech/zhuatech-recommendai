@@ -12,9 +12,16 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
-/** 生成带库存、重复购买和受限品类护栏的可解释推荐。 */
+/**
+ * 生成带库存、重复购买和受限品类护栏的可解释推荐。
+ *
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class RecommendAnalysisService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public Result recommend(Request request) {
         int score = Math.round(request.affinityScore() * 0.55f + request.businessPriority() * 0.20f
             + request.inventoryAvailability() * 0.15f + request.marginRate().movePointRight(2).floatValue() * 0.10f);
@@ -35,12 +42,18 @@ public class RecommendAnalysisService {
             reasons, request.restrictedCategory());
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Request(@NotBlank String userSegment, @NotBlank String candidateId,
                           @Min(0) @Max(100) int affinityScore,
                           @Min(0) @Max(100) int businessPriority,
                           @Min(0) @Max(100) int inventoryAvailability,
                           @DecimalMin("0") @DecimalMax("1") BigDecimal marginRate,
                           boolean recentlyPurchased, boolean restrictedCategory) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Result(String candidateId, String userSegment, int recommendationScore,
                          String decision, String placement, List<String> reasons,
                          boolean humanReviewRequired) {}
