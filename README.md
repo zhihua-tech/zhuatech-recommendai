@@ -1,5 +1,7 @@
 # RecommendAI
 
+[简体中文](README.md) | [English](README.en.md)
+
 **知华可解释智能推荐平台 · Java + Vue 社区源码版**
 
 由[知华科技（上海如静知华信息科技有限公司）](https://www.zhuatech.cn/)发布。
