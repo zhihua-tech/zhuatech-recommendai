@@ -1,0 +1,62 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "headSharePct": "#70",
+      "explorationSharePct": "#10"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "headImpressions": "7501"
+    },
+    "expected": {
+      "decision": "REVIEW"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "headImpressions": "7500"
+    },
+    "expected": {
+      "decision": "PASS"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "exploreImpressions": "999"
+    },
+    "expected": {
+      "decision": "REVIEW"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "headImpressions": "9500"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "totalImpressions": "0"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "minimumExplore": "0",
+      "exploreImpressions": "0"
+    },
+    "expected": {
+      "decision": "PASS"
+    },
+    "error": false
+  }
+]
