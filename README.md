@@ -1,5 +1,9 @@
 # RecommendAI
 
+## 本次功能更新：推荐排序离线质量评估
+
+根据人工分级相关性计算Precision、Recall和NDCG，明确未标注候选、重复候选和零相关样本的处理。 登录后从「业务计算工具」使用，支持校验与完整结果导出。详见[算法口径、接口和测试说明](docs/AI_OPERATIONS_UPGRADE_20261023.md)。
+
 [简体中文](README.md) | [English](README.en.md)
 
 **知华可解释智能推荐平台 · Java + Vue 社区源码版**

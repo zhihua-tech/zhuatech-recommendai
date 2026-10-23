@@ -1,5 +1,9 @@
 [简体中文](README.md) | **English**
 
+## Functional update: Offline recommendation ranking metrics
+
+Calculates offline precision, recall and NDCG from human relevance grades, explicitly rejecting unjudged or duplicate ranked candidates. Signed-in users can edit inputs and export real computed results. See [API, examples and limitations](docs/AI_OPERATIONS_UPGRADE_20261023.md). No external model calls or automatic business changes; existing licensing and contacts remain unchanged.
+
 # ZhuaTech RecommendAI
 
 > A source-available enterprise project by [ZhuaTech](https://www.zhuatech.cn/) for customer, sales, marketing, channel, and service operations.
